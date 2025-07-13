@@ -1,0 +1,31 @@
+#ass{
+    font-family:League spartan;
+    color:#ffa511;
+    text-align:center;
+    font-size:55px;
+    font-weight: 900;
+    letter-spacing:2px;
+    line-height:1.5;
+    text-decoration:teal double underline;
+    text-transform:uppercase;
+}
+*{
+    font-family:Courier New;
+}
+h1{
+    color:#1b74e4;
+}
+#search{
+    color:white;
+    background-color:black;
+}
+button{
+    background-color:aqua;
+}
+div #myid{
+    color:green
+}
+#div p:first-child{
+    background-color:yellow;
+    color:red;
+}
