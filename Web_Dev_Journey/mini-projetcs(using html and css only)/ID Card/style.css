@@ -1,0 +1,99 @@
+:root{
+    --background-color1:rgb(11, 11, 44);
+    --background-color2:rgb(188, 186, 186);
+}
+body{
+    background-color:var(--background-color1);
+}
+.cards{
+    margin:auto;
+    margin-top:90px;
+    display:flex;
+    justify-content: center;
+    height:350px;
+    width:250px;
+    background-color:rgb(211, 230, 247);
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow:6px 6px 15px grey;
+}
+.cards:hover{
+    box-shadow:10px 10px 15px grey;
+    transition: 200ms;
+    cursor: pointer;
+}
+.card{
+    margin:3px;  
+    height:340px;
+    width:240px;
+    background-color:var(--background-color2);
+    border:1px solid black;
+    border-radius:10px;
+}
+.name{
+    background-color:var(--background-color1);
+    margin:0px;
+    padding:0px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    text-align: center;
+}
+.name h1{
+    margin:0px;
+    padding:1px;
+    border-radius:10px;
+}
+.photo{
+    display:flex;
+    justify-content:center;
+    background-color:var(--background-color2);
+}
+.photo img{
+    height:120px;
+    width:110px;
+    border:solid black 1px;
+}
+.role{
+    margin:0%;
+    padding:0%;
+    text-align: center;
+    color: var(--background-color1);
+    background-color:var(--background-color2);
+}
+.role h2{
+    margin-bottom:0%;
+    background-color:var(--background-color2);
+    text-decoration: underline;
+}
+.role h3{
+    margin:0%;
+    padding:0%;
+    background-color:var(--background-color2);
+}
+.role p{
+    color:var(--background-color1);
+    margin:5px;
+    padding:0%;
+    background-color:var(--background-color2);
+}
+.role p b{
+    background-color:var(--background-color2);
+} 
+.role button{
+    color:var(--background-color1);
+    background-color:var(--background-color2);
+    border:solid black 1px;
+    border-radius:5px;
+    padding:2px 10px;
+}  
+button:hover{
+    color:white;
+    background-color: var(--background-color1);
+    cursor: pointer;
+}
+.cards .contact:hover{
+    color:white;
+}
+
+
