@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --color:rgb(234, 83, 108);
+    --shadow:6px 6px 8px rgb(83, 81, 81);
+    --decoration:underline;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background-color:rgb(230, 144, 159);
+    display:grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+    border:2px solid black;
+    text-align: center;
+    font-size:24px;
+    font-family: Arial, sans-serif;
+}
+header{
+    grid-row:1/span 1;
+    grid-column: 1/span 12;
+    border:2px solid black;
+}
+.sidebar{
+    grid-row:2/span 10;
+    grid-column:1/span 3;
+    border:2px solid black;
+}
+nav{
+    grid-row:2/2;
+    grid-column:4/span 6;
+    border:2px solid black;
+}
+main{
+    grid-row:3/span 9;
+    grid-column:4/span 6;
+    border:2px solid black;
+}
+.ads{
+    grid-row:2/span 10;
+    grid-column:10/span 3;
+    border:2px solid black;
+}
+footer{
+    grid-row:12/12;
+    grid-column:1/span 12;
+    border:2px solid black;
+}
+header:hover,
+.sidebar:hover,
+nav:hover,
+main:hover{
+    background-color:var(--color);
+    box-shadow:var(--shadow);
+    text-decoration:var(--decoration);
+}
+footer:hover{
+    background-color:var(--color);
+    box-shadow:-6px -6px 8px rgb(83, 81, 81);
+    text-decoration:var(--decoration);
+}
+.ads:hover{
+    background-color:var(--color);
+    box-shadow:-6px 6px 8px rgb(83, 81, 81);
+    text-decoration:var(--decoration);
+}
+@media (max-width:720px){
+    nav{
+        grid-row:2/span 1;
+        grid-column:1/ span 12;
+    }
+    .sidebar{
+        grid-row:3/span 9;
+        grid-column:1/span 3;
+    }
+    main{
+        grid-row:3/span 9;
+        grid-column:4/span 9;
+    }
+    main:hover{
+        box-shadow:-6px 6px 8px rgb(83, 81, 81);
+    }
+    .ads{
+        grid-row:12/span 1;
+        grid-column:1/span 3;
+    }
+    .ads:hover{
+        box-shadow:6px -6px 8px rgb(83, 81, 81);
+    }
+    footer{
+        grid-row:12/span 1;
+        grid-column:4/span 9;
+    }
+}
