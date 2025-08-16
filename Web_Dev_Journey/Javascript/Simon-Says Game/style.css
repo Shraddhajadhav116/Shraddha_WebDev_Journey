@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:rgb(34, 33, 33);
+}
+h1,
+h4{
+    color:white;
+    text-align:center;
+}
+h4{
+    margin-top:10px;
+}
+.game-container{
+    position:relative;
+    height:100vh;
+}
+.start-disc{
+    height:80px;
+    width:80px;
+    background-color: rgb(31, 30, 30);
+    position:absolute;
+    left:50%;
+    top:50%;
+    z-index:10;
+    border-radius:50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px black;
+    color:white;
+    border:1px solid rgb(110, 110, 110);
+    cursor: pointer;
+}
+.start-disc:hover{
+    box-shadow: 0 0 10px 2px black;
+}
+.boxes{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+.box{
+    height:200px;
+    width:200px;
+    color:white;
+    border:none;
+    margin:10px 5px;
+    cursor: pointer;
+}
+.box-1{
+    border-radius:100% 10px 0 10px;
+    background-color:rgb(15, 136, 57);
+}
+.box-2{
+    border-radius:10px 0 10px 100%;
+    background-color:rgb(211, 174, 10);
+}
+.box-3{
+    border-radius:10px 100% 10px 0;
+    background-color:rgb(198, 11, 11);
+}
+.box-4{
+    border-radius:0 10px 100% 10px;
+    background-color:rgb(112, 6, 165);
+}
+.gameFlash{
+    border:1px solid white;
+    box-shadow: 0 0 15px white;
+}
+.userFlash{
+    opacity:0.5;
+    border:1px solid white;
+    box-shadow: 0 0 15px white;   
+}
