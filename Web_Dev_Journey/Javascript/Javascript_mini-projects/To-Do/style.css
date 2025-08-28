@@ -1,0 +1,45 @@
+body{
+    text-align:center;
+    background-color:rgb(40, 40, 40);
+    color:white;
+}
+.app-box{
+    height:550px;
+    width:35%;
+    border:1.2px solid black;
+    margin:auto;
+    margin-top:17px;
+    border-radius:10px;
+    background-color:rgb(45, 44, 44);
+    box-shadow:0 0 7px  grey;
+}
+h3{
+    text-decoration: underline;
+}
+.task{
+    font-size:16px;
+    border:1.5px solid black;
+    padding:4px 5px;
+    border-radius:10px;
+    background-color:grey;
+    color:black;
+}
+ul{
+    text-align: start;
+    font-size: 18px;
+}
+.checkbox{
+   vertical-align: middle;
+}
+.list-container{
+    height:60%;
+    width:95%;
+    border:1px solid black;
+    margin:auto;
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+    background-color:rgb(49, 48, 48);
+    border-radius:10px;
+    box-shadow:0 0 3px grey;
+}
